@@ -1,4 +1,16 @@
 
-div {
-    background: yellow;
+
+h1 {
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    padding-block-start: 10rem;
+}
+
+
+
+body {
+    background-image: radial-gradient(circle, #ffa600, #ff7f31, #ff505a, #ff1687, #ff00b7, #ed00ce, #d118e7, #a932ff, #9834ff, #8437ff, #6f39ff, #543bff);
+    background-repeat: repeat-x;
+    height: 100vh;
 }

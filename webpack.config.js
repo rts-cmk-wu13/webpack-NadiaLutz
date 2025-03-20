@@ -1,23 +1,16 @@
 const path = require('path');
-
-module.exports = {
-  entry: './src/index.js',
-  output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'dist'),
-  },
-};
-
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: process.env.NODE_ENV,
   entry: {
-    home: ['/src/home.js', '/src/home.scss'],
-    account: ['/src/account.js', '/src/account.scss'],
-  },
-  output: {
+    home: ['./src/home.js', './src/home.scss'],
+    account: ['./src/account.js', './src/account.scss'],
+    index: ['./src/index.js']
+    },
+    output: {
     filename: '[name].js',
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
